@@ -1,0 +1,183 @@
+body {
+    background-color: #cccccc;
+}
+
+hr {
+    border: none;
+    width: 1px;
+    border-left: 2px solid rgb(184, 184, 190);
+    height: 250px;
+}
+
+.contenedorForm {
+    background-color: rgb(255, 255, 255);
+    /* Para centrar cualquier elemento dentro del contenedor */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /**/
+    width: 850px;
+    height: 410px;
+    margin: 40px auto;
+    border-radius: 10px;
+}
+
+.columna1 {
+    margin: 15px;
+    margin-left: -240px;
+}
+
+.columna2 {
+    margin: 15px;
+}
+
+.columna3 {
+    margin: 15px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+}
+
+.txt1 {
+    margin-bottom: -15px;
+    margin-top: 10px;
+    font-size: 16px;
+    font-family: 'Helvetica';
+}
+
+.txt2 {
+    margin-bottom: -15px;
+    padding-left: 3px;
+    font-size: 14px;
+    color: rgb(182, 180, 188);
+    font-family: 'Helvetica';
+}
+
+.txt3 {
+    padding-left: 19px;
+    font-size: 14px;
+    color: rgb(182, 180, 188);
+    font-family: 'Helvetica';
+}
+
+.txt4 {
+    padding-left: 5px;
+    margin-bottom: -14px;
+    margin-top: 10px;
+    font-size: 16px;
+    font-family: 'Helvetica';
+}
+
+.txt5 {
+    margin-bottom: 0px;
+    padding-left: 11px;
+    font-size: 14px;
+    color: rgb(182, 180, 188);
+    font-family: 'Helvetica';
+}
+
+.txt6 {
+    width: 0px;
+    margin-top: 1px;
+    padding-left: 4px;
+    font-size: 14px;
+    color: rgb(182, 180, 188);
+    font-family: 'Helvetica';
+}
+
+.txt7 {
+    padding-left: 11px;
+    margin-bottom: -15px;
+    margin-top: 10px;
+    font-size: 16px;
+    font-family: 'Helvetica';
+}
+
+.txt8 {
+    margin-left: -40px;
+    font-size: 14px;
+    color: rgb(182, 180, 188);
+    font-family: 'Helvetica';
+}
+
+.imagen1 {
+    display: flex;
+    padding-left: 22px;
+}
+
+.imagen2 {
+    display: flex;
+    padding-left: 22px;
+    padding-top: 15px;
+}
+
+.imagen3 {
+    display: flex;
+    padding-left: 22px;
+    padding-top: 15px;
+}
+
+h1 {
+    color: rgb(14, 104, 107);
+    font-family: 'Arial black';
+    font-size: 22px;
+    margin-bottom: 0px;
+}
+
+.p2 {
+    font-family: 'Arial';
+    font-size: 15px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+input {
+    display: block;
+}
+
+#txtName {
+    padding: 14px;
+    margin-bottom: 10px;
+    width: 230%;
+    border: 0;
+    background-color: rgb(240, 241, 248);
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+#txtApellidos {
+    padding: 14px;
+    margin-bottom: 10px;
+    width: 230%;
+    border: 0;
+    background-color: rgb(240, 241, 248);
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+#txtSug {
+    padding: 14px;
+    margin-bottom: 10px;
+    width: 230%;
+    height: 80px;
+    border: 0;
+    background-color: rgb(240, 241, 248);
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+#btnEnviar {
+    padding: 10px;
+    font-weight: bold;
+    border: 0;
+    border-radius: 5px;
+    width: 70px;
+    margin-top: 20px;
+    background-color: rgb(14, 104, 107);
+    color: white;
+    font-size: 14px;
+}
+
+#btnEnviar:hover {
+    cursor: pointer;
+    background-color: rgb(0, 148, 148);
+}

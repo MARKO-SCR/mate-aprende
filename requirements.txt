@@ -1,0 +1,9 @@
+# Python 3.10.11
+
+numpy==1.23.5
+nltk==3.8.1
+keras==2.14.0
+flask==3.0.0
+tensorflow==2.14.0
+mysql-connector-python==8.2.0
+werkzeug==3.0.1

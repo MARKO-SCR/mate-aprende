@@ -1,0 +1,292 @@
+@font-face {
+    font-family: 'book_worm';
+    src: url('/static/letras/book_worm.otf') format('truetype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    cursor: url('/static/images/cursor.png'), auto;
+    background-image: url('../images/fondo_salon.png');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-family: 'book_worm', sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+}
+
+#btnMicrofono {
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 5px;
+    display: block;
+    margin: auto;
+    margin-top: 40px;
+}
+
+#btnMicrofono:hover {
+    background-color: #e74c3c;
+}
+
+#btnMultiplicar,
+#btnDividir {
+    padding: 10px 20px;
+    margin: 50px;
+    text-align: center;
+    background-color: #02cfa3;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    width: 150px;
+}
+
+#btnMultiplicar:hover,
+#btnDividir:hover {
+    background-color: #56bea6;
+    color: #fff;
+}
+
+#contenedorBotones {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+#btnBienvenida {
+    padding: 12px;
+    background-color: #02cfa3;
+    color: #fff;
+    font-size: 25px;
+    font-family: 'book_worm', sans-serif;
+    margin-left: 20px;
+    letter-spacing: 2px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#btnBienvenida:hover {
+    background-color: #56bea6;
+    color: #fff;
+}
+
+.contenedorPrincipal {
+    margin-top: 20px;
+    margin-bottom: 5px;
+    display: flex;
+}
+
+.avatar {
+    width: 275px;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+#avatar {
+    padding-left: 150px;
+}
+
+/* CHAT */
+
+#chat {
+    width: 780px;
+}
+
+.contenedorChatPrincipal {
+    width: 810px;
+    height: 340px;
+    border: 2px solid #00fff5;
+    border-radius: 20px;
+    margin: auto;
+    background-image: url('/static/images/marco_chat.png');
+    background-size: cover;
+    background-position: center;
+    padding: 80px 40px 80px 40px;
+}
+
+.chat {
+    height: 100%;
+    overflow: auto;
+}
+
+.contenedorUsuarioBot {
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.usuarioBot {
+    margin-right: 15px;
+}
+
+#mensajeUsuarioBot {
+    text-align: justify;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 18px;
+}
+
+.contenedorImgChat,
+.contenedorVideoChat {
+    text-align: center;
+}
+
+.imgChat {
+    border-radius: 20px;
+}
+
+/* PERSONALIZAR SCROLL */
+.chat::-webkit-scrollbar {
+    width: 10px;
+}
+
+.chat::-webkit-scrollbar-thumb {
+    background-color: rgb(17, 122, 122);
+    border-radius: 5px;
+}
+
+.chat::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(100, 177, 177);
+}
+
+.chat::-webkit-scrollbar-track {
+    background-color: #eee;
+}
+
+/* BOTÓN - CERRAR SESIÓN */
+
+.contenedor1 {
+    display: flex;
+}
+
+.app {
+    margin-left: 450px;
+    /* IGUAL */
+}
+
+#btnCerrarSesion {
+    margin-left: 450px;
+    /* IGUAL */
+    padding: 8px 10px;
+    background-color: #f00;
+    text-decoration: none;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#btnCerrarSesion:hover {
+    background-color: #c00;
+}
+
+.icono {
+    margin-right: 2px;
+    width: 30px;
+    height: 30px;
+    background-image: url('/static/images/btn_cerrarSesion.png');
+    background-size: cover;
+    display: inline-block;
+}
+
+/* MODEL CERRAR SESIÓN */
+.modal {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    border-radius: 20px;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 30%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Definición de la animación fadeIn */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.tituloSesion {
+    margin-bottom: 10px;
+}
+
+.textoSesion {
+    margin-bottom: 30px;
+}
+
+.botonesSesion {
+    text-align: center;
+    margin-bottom: 14px;
+}
+
+.btnCancelar {
+    margin-right: 20px;
+    text-decoration: none;
+    background-color: #899494;
+    padding: 10px 40px 10px 40px;
+    border-radius: 10px;
+    color: white;
+}
+
+.btnCancelar:hover {
+    background-color: #a1adad;
+}
+
+.btnSalir {
+    text-decoration: none;
+    background-color: #ff0000;
+    padding: 10px 50px 10px 50px;
+    border-radius: 10px;
+    color: white;
+}
+
+.btnSalir:hover {
+    background-color: #ff3131;
+}

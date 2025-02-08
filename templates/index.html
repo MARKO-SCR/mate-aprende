@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>MateAprende</title>
+    <link rel="stylesheet" type="text/css" href="/static/css/estilos_index.css">
+    <link href="/static/images/logo_mate_aprende.png" type="image/x-icon" rel="shortcut icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/d607de136b.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("a").on('click', function (event) {
+                if (this.hash !== "") {
+                    event.preventDefault();
+                    var hash = this.hash;
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 500, function () {
+                        window.location.hash = hash;
+                    });
+                }
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="cabecera">
+            <a href="/"><img src="/static/images/logo_mate_aprende.png" alt="logo" style="width: 90px;" /></a>
+            <ul class="menu">
+                <li><a href="#seccion1">INICIO</a></li>
+                <li><a href="#seccion2">OFRECEMOS</a></li>
+                <li><a href="#seccion3">QUIÉNES SOMOS</a></li>
+                <li><a href="#seccion4">BENEFICIOS</a></li>
+                <li><a href="#seccion5">CONTÁCTANOS</a></li>
+                <li><a href="#seccion6">UBÍCANOS</a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <a href="https://api.whatsapp.com/send?phone=982741201" class="btn-wsp" target="_blank">
+            <i class="fa fa-whatsapp icono"></i>
+        </a>
+        <div class="seccion1" id="seccion1">
+            <div class="intro">
+                <h1>Aprende multiplicación <br> y división con <br /> "MateAprende"</h1>
+                <br />
+                <p>Te apoyamos en tu proceso de aprendizaje.</p>
+                <div class="reservar">
+                    <a class="btnReservar" href="https://api.whatsapp.com/send?phone=982741201"
+                        target="_blank">COMUNÍCATE</a>
+                </div>
+            </div>
+            <div class="enseñanza">
+                <img src="/static/images/enseñanza.png" alt="enseñanza" style="width: 800px;" />
+            </div>
+        </div>
+        <div class="seccion2" id="seccion2">
+            <div class="ofrecemos">
+                <h1>"MateAprende" te ofrece</h1>
+            </div>
+            <div class="aprendizaje">
+                <div class="av">
+                    <h2>Asistente Virtual</h2>
+                    <br />
+                    <p>Tendrás un asistente virtual que estará contigo durante tu proceso de aprendizaje, brindándote
+                        información y apoyándote en tus prácticas diarias.</p>
+                    <div class="reservar">
+                        <a class="btnReservar" href="https://api.whatsapp.com/send?phone=982741201"
+                            target="_blank">COMUNÍCATE AQUÍ</a>
+                    </div>
+                </div>
+                <div class="as">
+                    <h2>Aprender a multiplicar</h2>
+                    <br />
+                    <p>El asistente virtual se comunicará contigo y podrá brindarte multiplicaciones aleatorias, con el
+                        fin de que
+                        aprendas lo básico de la multiplicación.</p>
+                    <div class="reservar">
+                        <a class="btnReservar" href="https://api.whatsapp.com/send?phone=982741201"
+                            target="_blank">COMUNÍCATE AQUÍ</a>
+                    </div>
+                </div>
+                <div class="ar">
+                    <h2>Aprender a dividir</h2>
+                    <br />
+                    <p>El asistente virtual esta capacitado para proporcionar divisiones aleatorias, dándote 3
+                        oportunidades
+                        para responder correctamente.</p>
+                    <div class="reservar">
+                        <a class="btnReservar" href="https://api.whatsapp.com/send?phone=982741201"
+                            target="_blank">COMUNÍCATE AQUÍ</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="seccion3" id="seccion3">
+            <div class="qs">
+                <h1 style="color: white">¿Quiénes somos?</h1>
+                <br />
+                <p style="font-size: 1.1rem">Somos un equipo de desarrollo de software que se encuentra actualmente en
+                    constante
+                    aprendizaje y en esta oportunidad venimos a ofrecer una herramienta de apoyo para el aprendizaje de
+                    la multiplicación y división en los niños. De esta manera, los educadores podrían hacer uso de dicha
+                    herramienta como parte de su metodología de enseñanza.</p>
+            </div>
+            <video width="500" height="280" controls>
+                <source
+                    src="/static/videos/Aprende con Eddie a Sumar y Restar con Comida 🍓🍌 Matemáticas divertidas para niños.mp4"
+                    type="video/mp4" />
+                Tu navegador no es compatible con videos HTML5
+            </video>
+        </div>
+        <div class="seccion4" id="seccion4">
+            <div class="beneficios">
+                <h1>Beneficios de "MateAprende"</h1>
+            </div>
+            <div class="listado">
+                <div class="di">
+                    <h2>DISPONIBILIDAD INMEDIATA</h2>
+                    <br />
+                    <p>Contamos con una central de Whatsapp, que brinda respuesta inmediata sobre algunos
+                        inconvenientes que se puedan tener con el manejo del software.</p>
+                    <div class="reservar">
+                        <a class="btnReservar" href="https://api.whatsapp.com/send?phone=982741201"
+                            target="_blank">COMUNÍCATE</a>
+                    </div>
+                </div>
+                <div class="in">
+                    <h2>INTERACTIVIDAD</h2>
+                    <br />
+                    <p>Contamos con un asistente virtual, el cual podrá interactuar con los estudiantes, realizando
+                        conversaciones sencillas con lo relacionado a la multiplicación y división.</p>
+                    <div class="reservar">
+                        <a class="btnReservar" href="https://api.whatsapp.com/send?phone=982741201"
+                            target="_blank">COMUNÍCATE</a>
+                    </div>
+                </div>
+                <div class="access">
+                    <h2>ACCESIBILIDAD</h2>
+                    <br />
+                    <p>Podrás tener acceso al software incluso desde la comodidad de tu casa, solo contando con una PC y
+                        conexión a internet.</p>
+                    <div class="reservar">
+                        <a class="btnReservar" href="https://api.whatsapp.com/send?phone=982741201"
+                            target="_blank">COMUNÍCATE</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="seccion5" id="seccion5">
+            <div class="container-form">
+                <div class="info-form">
+                    <h2>Contáctanos</h2>
+                    <p>Envíanos un mensaje para brindarle información en relación con nuestro equipo de desarrollo de
+                        software,
+                        asimismo, puede mencionarnos el problema que desearía que tratemos con usted.</p>
+                    <a><i class="fa fa-phone"></i> 982741201</a>
+                    <a><i class="fa fa-envelope"></i> mateaprende360@gmail.com</a>
+                    <a><i class="fa fa-map-marked"></i> Lima, Perú</a>
+                </div>
+                <form id="formContactanos" method="post" action="/enviar_contactanos" autocomplete="off">
+                    <input type="text" name="nombres" placeholder="Nombres" class="campo" title="Nombres"
+                        oninput="this.setCustomValidity('')"
+                        pattern="[A-ZÁÉÍÓÚÜÑ][a-záéíóúüñ]*(?:\s[A-ZÁÉÍÓÚÜÑ][a-záéíóúüñ]*)*" required>
+                    <input type="text" name="apellidos" placeholder="Apellidos" class="campo" title="Apellidos"
+                        oninput="this.setCustomValidity('')"
+                        pattern="[A-ZÁÉÍÓÚÜÑ][a-záéíóúüñ]*(?:\s[A-ZÁÉÍÓÚÜÑ][a-záéíóúüñ]*)*" required>
+                    <textarea name="mensaje" placeholder="Mensaje..." title="Mensaje" required></textarea>
+                    <input type="submit" name="enviar" value="Enviar Mensaje" class="btn-enviar">
+                </form>
+            </div>
+        </div>
+        <div class="seccion6" id="seccion6">
+            <div class="ubicanos">
+                <h1>Ubícanos</h1>
+                <br>
+                <p class="textUbicacion">Actualmente pueden encontrarnos residiendo como estudiantes en la Universidad
+                    César Vallejo de la
+                    sede Lima-Norte, sin
+                    embargo, carecemos de disponibilidad inmediata presencial por motivos personales. Por tanto, los
+                    invitamos
+                    con mayor seguridad a realizar cualquier consulta, duda o sugerencia a través de nuestro Whatssap,
+                    correo electrónico o vía web.</p>
+                <br>
+                <p>Atte. Equipo de desarrollo de MateAprende</p>
+                <br>
+                <br>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d124904.9013391261!2d-77.21275405664062!3d-11.95523279999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105ce27c3ffffff%3A0xe167e46df1e75a12!2sUniversidad%20C%C3%A9sar%20Vallejo!5e0!3m2!1ses!2spe!4v1700122146241!5m2!1ses!2spe"
+                    width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="final">
+            <a class="sugerencias" href="/sugerencias">Sugerencias</a>
+            <a class="sistema" href="/login">Ir a MateAprende</a>
+        </div>
+    </footer>
+</body>
+
+</html>

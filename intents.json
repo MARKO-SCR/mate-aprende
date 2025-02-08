@@ -1,0 +1,300 @@
+{
+    "intents": [
+        {
+            "tag": "saludo",
+            "patterns": [
+                "hola",
+                "qué tal",
+                "cómo estás",
+                "saludos",
+                "buenos días",
+                "buenas tardes",
+                "buenas noches",
+                "hey",
+                "hola",
+                "hi",
+                "buen día",
+                "me ayudas",
+                "quiero aprender",
+                "qué onda",
+                "buenas",
+                "ya volví",
+                "estoy de vuelta",
+                "ya regresé",
+                "quiero que me enseñes"
+            ],
+            "responses": [
+                "¡Hola! Soy tu asistente de multiplicación y división. ¿En qué puedo ayudarte hoy?",
+                "¡Bienvenido!, ¿estás listo para aprender a multiplicar y dividir?. ¿Por dónde te gustaría comenzar?",
+                "¡Bienvenido! Estoy aquí para enseñarte todo sobre la multiplicación y la división. ¿Por dónde te gustaría empezar?",
+                "Hola. Es un placer tenerte por aquí. ¿Qué deseas aprender hoy?. ¿Multiplicación o división?",
+                "¡Saludos! Si deseas aprender sobre la multiplicación o la división, no dudes en preguntarme."
+            ]
+        },
+        {
+            "tag": "presentacion",
+            "patterns": [
+                "cómo funciona",
+                "preséntate",
+                "quiero que te presentes",
+                "qué eres",
+                "quién eres",
+                "cómo te llamas",
+                "cuál es tu nombre",
+                "dime tu nombre",
+                "quién te creó",
+                "háblame de tu creador",
+                "quién es tu creador",
+                "háblame de ti",
+                "explícate",
+                "cuéntame sobre ti",
+                "descríbete",
+                "háblame un poco de ti",
+                "qué haces",
+                "dime algo acerca de ti",
+                "cuál es tu propósito",
+                "para qué fuiste creado",
+                "qué puedes hacer",
+                "muéstrame quién eres",
+                "preséntate formalmente",
+                "háblame de tus habilidades",
+                "cómo te describirías",
+                "explícame quién eres",
+                "dime más sobre ti",
+                "háblame sobre tu origen"
+            ],
+            "responses": [
+                "Soy MateAprende, un modelo de lenguaje desarrollado por el equipo número 4 del curso de Sistemas Inteligentes, que está liderado por el magister Córdova López Jorge Luis. Soy un programa de inteligencia artificial diseñado para enseñar a multiplicar y dividir a los niños que tengan las ganas de aprender. No tengo una identidad propia ni conciencia, simplemente soy una herramienta de procesamiento de lenguaje natural. ¿En qué puedo ayudarte hoy?"
+            ]
+        },
+        {
+            "tag": "ejercicios_multiplicacion",
+            "patterns": [
+                "Quiero ejercicios de multiplicación",
+                "Dame ejercicios de multiplicación",
+                "Dame problemas de multiplicación",
+                "Quiero practicar multiplicación",
+                "Ejercicios para multiplicar",
+                "¿Puedes darme problemas de multiplicación?",
+                "Necesito practicar la multiplicación",
+                "Generar ejercicios de multiplicación",
+                "Practicar multiplicaciones",
+                "Ejercicios simples de multiplicación",
+                "¿Tienes problemas de multiplicación?",
+                "Ayuda con la multiplicación",
+                "Multiplicación matemática",
+                "Multiplicaciones básicas",
+                "Problemas simples de multiplicar",
+                "Necesito ejercicios para practicar multiplicación",
+                "Multiplicar números",
+                "¿Cómo hacer multiplicaciones?",
+                "Ejercicios de multiplicación para estudiar",
+                "Multiplica estos números",
+                "Dame tareas de multiplicación",
+                "Ejercicios de matemáticas: multiplicación"
+            ],
+            "responses": [
+                "Perfecto, empezaremos con los ejercicios de multiplicación... Haz clic en el siguiente botón para comenzar."
+            ]
+        },
+        {
+            "tag": "ejercicios_division",
+            "patterns": [
+                "Quiero ejercicios de división",
+                "Dame ejercicios de división",
+                "Dame problemas de división",
+                "Quiero practicar división",
+                "Ejercicios para dividir",
+                "¿Puedes darme problemas de división?",
+                "Necesito practicar la división",
+                "Generar ejercicios de división",
+                "Practicar divisiones",
+                "Ejercicios simples de división",
+                "¿Tienes problemas de división?",
+                "Ayuda con la división",
+                "División matemática",
+                "Divisiones básicas",
+                "Problemas simples de dividir",
+                "Necesito ejercicios para practicar división",
+                "Dividir números",
+                "¿Cómo hacer divisiones?",
+                "Ejercicios de división para estudiar",
+                "Divide estos números",
+                "Dame tareas de división",
+                "Ejercicios de matemáticas: división"
+            ],
+            "responses": [
+                "Perfecto, empezaremos con los ejercicios de división... Haz clic en el siguiente botón para comenzar."
+            ]
+        },
+        {
+            "tag": "despedida",
+            "patterns": [
+                "adiós",
+                "hasta luego",
+                "nos vemos",
+                "suficiente",
+                "ya me voy",
+                "volveré luego",
+                "me tengo que ir",
+                "estoy cansado",
+                "quisiera practicar luego",
+                "quisiera practicar en otro momento",
+                "chau",
+                "bye",
+                "me voy"
+            ],
+            "responses": [
+                "No hay problema. Hasta luego, ¡sigue practicando tus matemáticas!",
+                "Comprendo. Nos vemos pronto, ¡y no te olvides de seguir practicando!",
+                "De acuerdo. Espero verte pronto, ¡no te olvides de practicar tus matemáticas!"
+            ]
+        },
+        {
+            "tag": "concepto_multiplicacion",
+            "patterns": [
+                "¿Qué es la multiplicación?",
+                "Explícame la multiplicación",
+                "Conceptos básicos de multiplicación",
+                "Definición de multiplicación",
+                "¿Cómo funciona la multiplicación?",
+                "Multiplicación en matemáticas",
+                "aprender multiplicación",
+                "quiero aprender multiplicación",
+                "quiero que me enseñes a multiplicar",
+                "enséñame a multiplicar",
+                "enséñame multiplicación",
+                "aprender a multiplicar",
+                "estudiar multiplicación"
+            ],
+            "responses": [
+                "La multiplicación es una operación matemática que consiste en encontrar el resultado de multiplicar una cifra por otra. Multiplicar consiste en añadir o sumar un número varias veces, por ejemplo, la operación 2 x 3 equivale sumar tres veces el número 2, en ambas el resultado es 6. ¿Hay algo en particular que te gustaría saber sobre la multiplicación?"
+            ]
+        },
+        {
+            "tag": "concepto_division",
+            "patterns": [
+                "¿Qué es la división?",
+                "Explícame la división",
+                "Conceptos básicos de división",
+                "Definición de división",
+                "¿Cómo funciona la división?",
+                "División en matemáticas",
+                "aprender división",
+                "quiero aprender división",
+                "quiero que me enseñes a dividir",
+                "enséñame a dividir",
+                "enséñame división",
+                "aprender a dividir",
+                "estudiar división"
+            ],
+            "responses": [
+                "La división es una de las operaciones básicas de la aritmética y consiste en separar en partes iguales un total. Es decir, si tenemos una cantidad y queremos dividirla en partes iguales, podemos utilizar la división para determinar cuántas partes iguales obtenemos y qué cantidad corresponde a cada parte. Por ejemplo, si tenemos 10 unidades y queremos dividirlas en 5 partes iguales, corresponderán 2 unidades a cada parte. ¿Hay algo en particular que te gustaría saber sobre la división?"
+            ]
+        },
+        {
+            "tag": "video_multiplicacion",
+            "patterns": [
+                "Quiero ver un video sobre multiplicación",
+                "Video educativo de multiplicación",
+                "¿Hay algún video sobre cómo multiplicar?",
+                "Recomiéndame un video de multiplicación",
+                "¿Puedes mostrarme un video sobre la multiplicación?",
+                "Video didáctico multiplicación",
+                "Necesito un video para entender mejor la multiplicación",
+                "Explícame la multiplicación a través de un video",
+                "Mostrar video sobre multiplicación",
+                "Enseñarme multiplicación con un video",
+                "¿Tienes algún recurso audiovisual sobre multiplicación?",
+                "Ver material visual sobre multiplicación"
+            ],
+            "responses": [
+                "¡Claro! Aquí tienes un video educativo sobre la multiplicación. ¡Espero que encuentres útil la información!"
+            ]
+        },
+        {
+            "tag": "video_division",
+            "patterns": [
+                "Quiero ver un video sobre división",
+                "Video educativo de división",
+                "¿Hay algún video sobre cómo dividir?",
+                "Recomiéndame un video de división",
+                "¿Puedes mostrarme un video sobre la división?",
+                "Video didáctico división",
+                "Necesito un video para entender mejor la división",
+                "Explícame la división a través de un video",
+                "Mostrar video sobre división",
+                "Enseñarme división con un video",
+                "¿Tienes algún recurso audiovisual sobre división?",
+                "Ver material visual sobre división"
+            ],
+            "responses": [
+                "¡Claro! Aquí tienes un video educativo sobre la división. ¡Espero que encuentres útil la información!"
+            ]
+        },
+        {
+            "tag": "partes_multiplicacion",
+            "patterns": [
+                "¿Cuáles son las partes de una multiplicación?",
+                "Explícame los componentes de una multiplicación",
+                "Partes de una operación de multiplicación",
+                "¿Qué incluye una multiplicación?",
+                "Detalles de una multiplicación",
+                "¿Puedes hablarme sobre los factores y el producto en multiplicación?",
+                "Explicación de multiplicación en términos de partes",
+                "Háblame de los elementos de la multiplicación",
+                "¿Cuáles son los términos involucrados en una multiplicación?",
+                "Define los elementos de la multiplicación",
+                "Explica cómo se componen los números en una multiplicación",
+                "¿Qué conforma una ecuación de multiplicación?"
+            ],
+            "responses": [
+                "En matemática, la multiplicación tiene tres partes que la componen:\n • Multiplicando: es el número que va a ser multiplicado.\n • Multiplicador: es el componente que indica cuántas veces se va a sumar el multiplicando.\n • Producto: es el resultado o solución de la multiplicación.\nAl multiplicando y al multiplicador también se les llama factores."
+            ]
+        },
+        {
+            "tag": "partes_division",
+            "patterns": [
+                "¿Cuáles son las partes de una división?",
+                "Explícame los componentes de una división",
+                "Partes de una operación de división",
+                "¿Qué incluye una división?",
+                "Detalles de una división",
+                "¿Puedes hablarme sobre los dividendos, divisores y cociente en división?",
+                "Explicación de división en términos de partes",
+                "Háblame de los elementos de la división",
+                "¿Cuáles son los términos involucrados en una división?",
+                "Define los elementos de la división",
+                "Explica cómo se componen los números en una división",
+                "¿Qué conforma una ecuación de división?",
+                "Partes fundamentales de una división",
+                "Desglosa los términos de una división"
+            ],
+            "responses": [
+                "Una división está formada por cuatro elementos:\n • Dividendo: es la cantidad total que se quiere repartir en partes iguales.\n • Divisor: es la cantidad de partes en la que se va a dividir el dividendo.\n • Cociente: es el resultado de la división. En otras palabras, es el número de veces que el divisor “cabe” en el dividendo.\n • Resto: es la cantidad que queda sobrante después de realizar una división cuyo resultado no es exacto.\nPor ejemplo, si dividiéramos 10 ÷ 5 obtendríamos un cociente de 2 y un resto de 0."
+            ]
+        },
+        {
+            "tag": "tabla_multiplicar",
+            "patterns": [
+                "Dame la tabla de multiplicar",
+                "Mostrar tabla de multiplicar",
+                "¿Puedes darme la tabla de multiplicar?",
+                "Tabla de multiplicar completa",
+                "Necesito la tabla de multiplicar",
+                "¿Cuál es la tabla de multiplicar?",
+                "Mostrar hasta qué número la tabla de multiplicar",
+                "Enseñarme la tabla de multiplicar",
+                "¿Puedes generarme la tabla de multiplicar hasta el 10?",
+                "Dime los resultados de la multiplicación hasta el 10",
+                "Quiero ver la tabla de multiplicar",
+                "¿Hasta cuánto puedo obtener la tabla de multiplicar?",
+                "Muestra la tabla de multiplicar desde el 1 hasta el 10",
+                "Generar tabla con resultados de multiplicación"
+            ],
+            "responses": [
+                "¡Claro! Aquí tienes la tabla de multiplicar hasta el 10. ¿Hay algo más en lo que pueda ayudarte?"
+            ]
+        }
+    ]
+}

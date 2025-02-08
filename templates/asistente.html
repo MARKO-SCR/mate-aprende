@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>MateAprende</title>
+    <link rel="stylesheet" type="text/css" href="/static/css/estilos_asistente.css">
+    <link href="/static/images/logo_mate_aprende.png" type="image/x-icon" rel="shortcut icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Firebase App (el primer script es firebase-app, el segundo es firebase-auth) -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-auth.js"></script>
+</head>
+
+<body>
+    <div class="contenedor1">
+        <h1 class="app">MateAprende</h1>
+        <a id="btnCerrarSesion" href="#" onclick="openSesionModal()" title="Cerrar sesión"><span
+                class="icono"></span></a>
+    </div>
+
+    <div class="contenedorPrincipal">
+        <div class="contenedorChatPrincipal">
+            <div class="chat" id="ContenedorChat">
+                <div id="chat"></div>
+                <img id="btnMicrofono" src="../static/images/microfono.png" width="30" />
+                <div id="contenedorBotones">
+                    <img id="hola" src="../static/images/hola.png" alt="Saludo" width="50" />
+                    <a id="btnBienvenida" onclick="eliminarBoton()">Bienvenido</a>
+                </div>
+                <a href="/multiplicar" id="btnMultiplicar">COMENZAR</a>
+                <a href="/dividir" id="btnDividir">COMENZAR</a>
+            </div>
+        </div>
+
+        <div class="avatar" id="contenedorAvatar">
+            <img id="avatar" width="130" src="../static/images/avatar.png" alt="Avatar" />
+            <img id="avatar_hablando" width="274" src="../static/images/avatar_hablando.png" alt="Avatar_hablando" />
+        </div>
+    </div>
+
+    <!-- Modal Cerrar Sesión -->
+    <div id="CerrarSesionModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeSesionModal()">&times;</span>
+            <h3 class="tituloSesion">Cerrar sesión</h3>
+            <p class="textoSesion">¿Seguro que quieres salir de tu cuenta?</p>
+            <div class="botonesSesion">
+                <a class="btnCancelar" href="#" onclick="closeSesionModal()">Cancelar</a>
+                <a class="btnSalir" href="#" onclick="cerrarSesion()">Salir</a>
+            </div>
+        </div>
+    </div>
+
+    <audio id="sonido_bot" src="/static/sonidos/sonido_bot.mp3" hidden></audio>
+    <audio id="sonido_mensaje" src="/static/sonidos/sonido_mensaje.mp3" hidden></audio>
+    <audio id="sonido_microfono" src="/static/sonidos/sonido_microfono.mp3" hidden></audio>
+
+    <script src="/static/js/script_asistente.js"></script>
+</body>
+
+</html>

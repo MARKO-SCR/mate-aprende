@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Multiplicación</title>
+    <link href="/static/images/logo_mate_aprende.png" type="image/x-icon" rel="shortcut icon">
+    <link rel="stylesheet" type="text/css" href="/static/css/estilos_multiplicacion.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Firebase App (el primer script es firebase-app, el segundo es firebase-auth) -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-auth.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="contenedor1">
+            <a id="btnRegresar" href="/asistente" title="Regresar"><span class="icono"></span></a>
+            <h1 class="titulo">Ejercicios de Multiplicación</h1>
+        </div>
+    </header>
+    <main>
+        <div class="contenedorForm">
+            <form method="POST" action="/validarMultiplicacion">
+                <p id="ejercicio">¿Cuánto es {{ EJERCICIO }}?</p>
+                <input type="number" name="respuesta_usuario" required>
+                <input class="btnResponder" type="submit" value="Responder">
+                {% if INTENTOS %}
+                <p>Intentos: {{ INTENTOS }}</p>
+                {% endif %}
+                {% if resultado %}
+                <p>{{ resultado }}</p>
+                {% endif %}
+                <p>Intentos restantes: {{ INTENTOS_RESTANTES }}</p>
+            </form>
+        </div>
+
+        <div class="avatar" id="contenedorAvatar">
+            <img id="avatar" width="110" src="../static/images/avatar.png" alt="Avatar" />
+            <img id="avatar_hablando" width="235" src="../static/images/avatar_hablando.png" alt="Avatar_hablando" />
+        </div>
+        <br>
+        <br>
+    </main>
+
+    <script src="/static/js/script_multiplicar.js"></script>
+</body>
+
+</html>

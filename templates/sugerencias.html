@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sugerencias</title>
+    <link href="/static/images/sugerencia.png" type="image/x-icon" rel="shortcut icon">
+    <link rel="stylesheet" type="text/css" media="all" href="/static/css/estilos_sugerencias.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <div class="contenedorForm">
+        <div class="columna1">
+            <!-- Dirección -->
+            <img class="imagen1" src="/static/images/ubicacion.png" alt="Icono de ubicación" style="width: 25px" />
+            <h3 class="txt1">Dirección</h3>
+            <p class="txt2">Los Olivos</p>
+            <p class="txt3">Lima</p>
+            <!-- Teléfono -->
+            <img class="imagen2" src="/static/images/telefono.png" alt="Icono de ubicación" style="width: 30px" />
+            <h3 class="txt4">Teléfono</h3>
+            <p class="txt5">5448042</p>
+            <p class="txt6">982741201</p>
+            <!-- Correo -->
+            <img class="imagen3" src="/static/images/correo.png" alt="Icono de ubicación" style="width: 32px" />
+            <h3 class="txt7">Correo</h3>
+            <p class="txt8">mateaprende360@gmail.com</p>
+        </div>
+        <div class="column2">
+            <hr />
+        </div>
+        <div class="columna3">
+            <h1>Sugerencias</h1>
+            <p class="p2">coloque sus sugerencias</p>
+            <form action="/enviar_sugerencia" method="post">
+                <input id="txtName" type="text" name="txtNombres" placeholder="Nombres" title="Nombres"
+                    oninput="this.setCustomValidity('')"
+                    pattern="[A-ZÁÉÍÓÚÜÑ][a-záéíóúüñ]*(?:\s[A-ZÁÉÍÓÚÜÑ][a-záéíóúüñ]*)*" required />
+                <input id="txtApellidos" type="text" name="txtApellidos" placeholder="Apellidos" title="Apellidos"
+                    oninput="this.setCustomValidity('')"
+                    pattern="[A-ZÁÉÍÓÚÜÑ][a-záéíóúüñ]*(?:\s[A-ZÁÉÍÓÚÜÑ][a-záéíóúüñ]*)*" required />
+                <input id="txtSug" type="text" name="txtSugerencia" placeholder="Sugerencia..."
+                    title="Escriba su sugerencia" oninput="this.setCustomValidity('')" required />
+                <input id="btnEnviar" type="submit" value="Enviar" />
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
